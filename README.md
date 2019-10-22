@@ -45,7 +45,6 @@ pipeline {
                 cd ${WORKSPACE}
                 ls
                 chmod -R 666 *
-                cat *.pem
                 cp fullchain1.pem ${params.domain}.crt
                 cp privkey1.pem	${params.domain}.key
                 
