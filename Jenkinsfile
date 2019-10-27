@@ -26,6 +26,7 @@ pipeline {
                 ls
                 chmod -R 666 *
                 cp fullchain1.pem ${params.domain}.crt
+                cp fullchain1.pem ${params.domain}.crt.remove
                 cp privkey1.pem	${params.domain}.key
                 
                 """
