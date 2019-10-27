@@ -32,6 +32,7 @@ pipeline {
                 """
                 archiveArtifacts artifacts: '*.pem'
                 archiveArtifacts artifacts: '*.crt'
+                archiveArtifacts artifacts: '*.crt.remove'
                 archiveArtifacts artifacts: '*.key'
             }
         }
